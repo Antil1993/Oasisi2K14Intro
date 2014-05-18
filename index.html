@@ -1,0 +1,187 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>THAT 90's SHOW | OASIS 2014 | BITS Pilani</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta http-equiv="content-language" content="EN">
+    <meta name="copyright" content="Copyright © 2014 Department Of Visual Media, BITS Pilani">
+    <meta name="author" content="Department Of Visual Media, BITS Pilani">
+    <meta name="email" content="dvm@bits-oasis.org">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="Global">
+    <meta name="revisit-after" content="3 days">
+
+    <meta property="og:title" content="THAT 90's SHOW | OASIS 2014 | BITS Pilani">
+	<meta property="og:site_name" content="OASIS Introduction Website">
+	<meta property="og:url" content="http://www.bits-bosm.org/intro">
+	<meta property="og:description" content="With the last year's edition
+            witnessing phenomenal participation from colleges both from India and abroad,
+            the 28th edition guarantees excitement well supplemented by floodlit matches
+            in the evening and the unbridled enthusiasm of the crowds for highly
+            competitive track and off-track events, in the true spirit of sportsmanship
+            and camaraderie. 18th September - 22nd September. BOSM 2013. Come, battle it
+            out, with grit and guts, in pursuit of glory.">
+	<meta property="og:image" content="http://www.bits-bosm.org/testIntro/archives.png">
+	<meta property="og:type" content="website">
+
+<script type="text/javascript" src="./js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="./js/jquery.easing.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+<script src="js/imagesLoaded.js" type="text/javascript"></script>	
+
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+</head>
+
+<body>
+	<!--  LOADING PAGE  -->
+	<div id="cover" class="cover">
+        <img src="images/loading2.gif" id="loading" class="loading"></div>
+    </div>
+
+    <!--  LIGHTBOX  -->
+	<div id="black" class="black">
+		<div id="lightbox" class="lightbox">
+			<div id="lightbox_head" class="lightbox_head">
+				<div id="lightbox_title" class="lightbox_title"></div>
+				<div id="lightbox_cross" class="lightbox_cross">CLOSE</div>
+			</div>
+			<div id="lightbox_content" class="lightbox_content">
+				<div id="ct1" class="ctdiv">ABOUT US</div>
+				<div id="ct2" class="ctdiv">CONTACTS</div>
+				<div id="ct3" class="ctdiv">SPONSORS</div>
+			</div>	
+		</div>
+	</div>
+
+
+
+	<div id="main-container">
+		<div id="back-roads">
+		</div>
+		
+			<img class="lights" id="lights-top" src="./images/lights-top.png">
+			<img class="lights" id="lights-right" src="./images/lights-right.png">
+			<img class="lights" id="lights-left" src="./images/lights-left.png">
+			<img class="lights" id="lights-bottom" src="./images/lights-bottom.png">;
+			
+			<img id="bppc" src="./images/bppc.png">
+			<img id="oasis14" src="./images/oasis14.png">
+			
+			<img class="strip" id="ribbon" src="./images/ribbon.png">
+			<img class="strip" id="strip-1" src="./images/strip-1.png">
+			<img class="strip" id="strip-2" src="./images/strip-2.png">
+			<img class="strip" id="strip-3" src="./images/strip-3.png">
+			<img class="strip" id="strip-4" src="./images/strip-4.png">
+			<img class="strip" id="strip-container" src="./images/strip-container.png">
+			
+			<img id="frame" src="./images/boardpng.png">
+			
+		<ul id="button-left">
+			<li><button id="bt1" class="bt">ABOUT US</button></li>
+			<li><button id="bt2" class="bt">CONTACTS</button></li>
+		</ul>
+		
+		<ul id="button-right">
+			<li><button id="bt3" class="bt">SPONSORS</button></li>
+			<li><button id="bt4" class="bt">OASIS'13</button></li>
+		</ul>
+
+			<div class="flip-container" id="flipper-1">
+				<div class="flipper">
+					<div class="front">
+					</div>
+					<div class="back">
+					</div>
+				</div>
+			</div>
+			
+			<div class="flip-container" id="flipper-2">
+				<div class="flipper">
+					<div class="front">
+					</div>
+					<div class="back">
+					</div>
+				</div>
+			</div>
+			
+			<div class="flip-container" id="flipper-3">
+				<div class="flipper">
+					<div class="front">
+					</div>
+					<div class="back">
+					</div>
+				</div>			
+			</div>
+			
+			<div class="flip-container" id="flipper-4">
+				<div class="flipper">
+					<div class="front">
+					</div>
+					<div class="back">
+					</div>
+				</div>
+			</div>
+			
+			<div class="flip-container" id="flipper-5">
+				<div class="flipper">
+					<div class="front">
+					</div>
+					<div class="back">
+					</div>
+				</div>
+			</div>
+			
+			<div class="flip-container" id="flipper-6">
+				<div class="flipper">
+					<div class="front">
+					</div>
+					<div class="back">
+					</div>
+				</div>
+			</div>
+
+			<p id="title" class="title">THAT 90's SHOW</p>
+			<p id="timer" class="timer"></p>
+			
+	</div>
+	
+	<script>
+	$(document).imagesLoaded()
+  		.done( function() {
+    		setTime();
+    		fireAnimations();
+    		$('.cover').css("display","none");
+  		});	
+
+
+		$('.bt').click(function() {
+			var item = $(this).attr('id');
+			item = item.substring(2,3);
+			//console.log(item);
+			if (item == '4') {
+				window.location.assign("http://www.bits-oasis.org")
+			}else {
+				var list = {title1:'ABOUT US',title2:'CONTACTS', title3:'SPONSORS'};
+				$('.lightbox_title').html(list['title'+item]);
+				$('.ctdiv').css("display","none");
+				$('#ct'+item).fadeIn();
+				$('.black').fadeIn();
+			}
+		});
+		$('.lightbox_cross').click(function() {
+			$('.black').fadeOut();
+		});
+		$('.black').click(function() {
+			$('.black').fadeOut();
+		});
+	</script>
+</body>
+</html>
