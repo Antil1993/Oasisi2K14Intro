@@ -6,9 +6,8 @@ body
 }
 
 @font-face
-{
-font-family:Alegreya-Sans-SC;
-src: url(AlegreyaSC-Black.ttf);
+{	font-family:Alegreya-Sans-SC;
+	src: url(AlegreyaSC-Black.ttf);
 }
 
 @font-face 
@@ -17,15 +16,13 @@ src: url(AlegreyaSC-Black.ttf);
 }
 
 @font-face
-{
-font-family:OrthodoxHerbertarian;
-src: url(OrthodoxHerbertarian.ttf);
+{	font-family:OrthodoxHerbertarian;
+	src: url(OrthodoxHerbertarian.ttf);
 }
 
 @font-face
-{
-font-family:Oswald-Light;
-src: url(Oswald-Light.ttf);
+{	font-family:Oswald-Light;
+	src: url(Oswald-Light.ttf);
 }
 
 /*--------------------------SCROLL BAR STYLING-------------------------------------------------*/
@@ -92,23 +89,12 @@ div#back-roads
 	z-index:2;
 }
 
-.lights
-{	width:100%;
-	height:100%;
-	position:absolute;
-	z-index:200;
-}
-
-#lights-bottom
-{	z-index:2001 !important;
-}
-
 /*------------------------------------------SPOTLIGHT ANIMATION-----------------------------------*/
 .spotlights
 {	width:100%;
 	height:100%;
 	position:absolute;
-	z-index:2000;
+	z-index:3;
 	background-color:transparent;
 	overflow:hidden;
 	left:-8px;
@@ -238,7 +224,7 @@ div#back-roads
 
 #bppc
 {	position:absolute;
-	z-index:4;
+	z-index:3;
 	width:20%;
 	top:5%;
 	left:2%;
@@ -246,7 +232,7 @@ div#back-roads
 
 #oasis14
 {	position:absolute;
-	z-index:4;
+	z-index:3;
 	width:20%;
 	top:5%;
 	right:2%;
@@ -260,17 +246,24 @@ div#back-roads
 {	width:100%;
 	height:100%;
 	position:absolute;
-	z-index:2002;
+	z-index:4;
 	left:-1px;
 }
 
+#frame
+{	position:absolute;
+	width:94%;
+	z-index:4;
+	top:10%;
+	margin-left:3%;
+}
 
 #button-all
 {	display:none;
 }
 
 .button-list
-{	z-index:4000;
+{	z-index:6;
 	position:absolute;
 	width:30%;
 	padding:0px;
@@ -336,7 +329,7 @@ div#back-roads
 
 #social-media
 {	background-color:rgba(0,0,0,0.6);
-	z-index:4500;
+	z-index:5;
 	position:absolute;
 	top:90%;
 	right:1%;
@@ -369,18 +362,10 @@ div#back-roads
 {	opacity:1;
 }
 
-#frame
-{	position:absolute;
-	width:94%;
-	z-index:400;
-	top:10%;
-	margin-left:3%;
-}
-
 /*----------------------------------------------FLIPPERs------------------------------------------------*/
 div.flip-container
 {	position:absolute;
-	z-index:4000;
+	z-index:5;
 	cursor:pointer;
 }
 
@@ -388,7 +373,7 @@ div.flip-container
 {	width: 100%;
 	height: 100%;
 	margin:auto;
-	z-index:1000;
+	z-index:6;
 }
 
 .flipper .front
@@ -463,7 +448,6 @@ div.flip-container
 {/* 	-webkit-transform: rotateY(0deg);
 	-ms-transform: rotateY(0deg); */
 	background: transparent;
-	z-index: 2;
 }
 
 /*-------------------------------------------BOTTOM TEXT---------------------------------------------*/
@@ -471,7 +455,7 @@ div.flip-container
 {	position:absolute;
 	width:30%;
 	color:white;
-	z-index:3001;
+	z-index:5;
 	margin-left:35%;
 	text-align:center;
 	font-weight: 900;
@@ -500,7 +484,7 @@ div.flip-container
 
 .black 
 {	position: absolute;
-	z-index:5000;
+	z-index:7;
 	top: 0px;
 	left: 0px;
 	width:100%;
@@ -702,14 +686,13 @@ div.flip-container
 
 }
 
-
 .container
-{	
+{	background:transparent;
 	height: 100%;
 	width: 100%;
 	position: fixed;
 	margin: 0;
-	z-index: 5000;
+	z-index: 3;
 }
 
 .bulb_container
@@ -730,4 +713,4 @@ div.flip-container
 	content:url("./../images/bulb_off.png");
 	background: transparent;
 	z-index: -1;
-}
+} 
