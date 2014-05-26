@@ -252,3 +252,125 @@ function setTime() {				//FUNCTION TO SET TIME LEFT
     $('.days').html(days);
 	$('.days').html(days);
 }
+
+/*---------------------------Bulb-Animation------------------------------*/
+
+/*---------------------------Global Variables----------------------------*/
+var flag=0,style=0;
+
+/*--------------------------Flicker Styles-------------------------------*/
+
+function flicker(x)
+{
+	if(x==1) //effect 1
+	{
+		setInterval(function () {
+			$(".bulb_container").fadeOut(500);
+			$(".bulb_container").fadeIn(500);
+		},0);
+	}
+	else if(x==2) //effect 2 write code sometime
+	{
+		var h,h_int,w,w_int,n,i,j,flag=1;
+		$(".bulb_container").fadeOut(0);
+		h = $(window).height();
+		h=h/36;
+		h_int=Math.floor(h); 
+		w = $(window).width();
+		w=w/42;
+		w_int=Math.floor(w);
+		n=2*(h_int+w_int-1);
+
+	}
+	else if(x==3) //effect 3
+	{
+		var h,h_int,w,w_int,n,x;
+		h = $(window).height();
+		h=h/36;
+		h_int=Math.floor(h); 
+		w = $(window).width();
+		w=w/42;
+		w_int=Math.floor(w);
+		n=2*(h_int+w_int-1);
+		setInterval(function() {
+			x=n*Math.random();
+			x=Math.floor(x);
+			if($("#bulb"+x).css("display")==="none")
+			{
+				$("#bulb"+x).fadeIn(500);
+			}	
+			else
+			{
+				$("#bulb"+x).fadeOut(500);
+			}
+
+		},10);
+	}
+}
+
+/*---------------------------------Function to put bulbs-----------------------------------*/
+
+function put_side_bulbs()
+{
+	var h,h_int,w,w_int;
+	h = $(window).height();
+	h=h/36; //height divided by 36 (which is the height of bulb container) to give how many bulbs to be placed
+	h_int=Math.floor(h); //floor of height to get the extra margin to be left
+	w = $(window).width();
+	w=w/42;
+	w_int=Math.floor(w);
+	for(i=0; i<h_int; i++) //loop for left edge
+	{
+		$(".container").append("<img class='bulb_container' id=bulb"+i+"></img>");
+		$(".container").append("<img class='bulb_back' id=bulb_back"+i+"></img>");
+		$("#bulb"+i).css("top",(h-h_int)+i*36); //h-h_int denotes the height to be left at the top, i*36 denotes the futher increment in height
+		$("#bulb_back"+i).css("top",(h-h_int)+i*36);
+	}
+	for(j=1; j<w_int; j++) //bottom edge
+	{
+		$(".container").append("<img class='bulb_container' id=bulb"+i+"></img>");
+		$(".container").append("<img class='bulb_back' id=bulb_back"+i+"></img>");
+		$("#bulb"+i).css("bottom",5);
+		$("#bulb_back"+i).css("bottom",5);
+		$("#bulb"+i).css("left",(w-w_int)+j*42);
+		$("#bulb_back"+i).css("left",(w-w_int)+j*42);
+		i++;
+	}
+
+	for(j=h_int-1; j>=0; j--) //right edge
+	{
+		$(".container").append("<img class='bulb_container' id=bulb"+i+"></img>");
+		$(".container").append("<img class='bulb_back' id=bulb_back"+i+"></img>");
+		$("#bulb"+i).css("top",(h-h_int)+j*36); //h-h_int denotes the height to be left at the top, i*36 denotes the futher increment in height
+		$("#bulb_back"+i).css("top",(h-h_int)+j*36);
+		$("#bulb"+i).css("right",0);
+		$("#bulb_back"+i).css("right",0);
+		i++;
+	}
+	for(j=w_int-1; j>0; j--) //top edge
+	{
+		$(".container").append("<img class='bulb_container' id=bulb"+i+"></img>");
+		$(".container").append("<img class='bulb_back' id=bulb_back"+i+"></img>");
+		$("#bulb"+i).css("left",(w-w_int)-3+j*42);
+		$("#bulb_back"+i).css("left",(w-w_int)-3+j*42);
+		i++;		
+	}
+
+}
+
+/*--------------------------------------Document.ready function----------------------------*/
+
+$(document).ready(function(){
+	if(flag==0)
+	{	
+		flag++;
+		put_side_bulbs();
+		flicker(3);
+	}
+
+	$(window).resize(function(){
+		$(".container").empty();
+		put_side_bulbs();
+		flicker(3);
+	});
+});

@@ -701,3 +701,32 @@ div.flip-container
 	}
 
 }
+
+/*
+.container
+{	
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	margin: 0;
+	z-index: 10000;
+}
+
+.bulb_container
+{
+	position: absolute;
+	height: 36px;
+	width: 42px;
+	margin: 0;
+	content:url("./../images/bulb_on.png");
+}
+.bulb_back
+{
+	position: absolute;
+	height: 36px;
+	width: 42px;
+	margin: 0;
+	content:url("./../images/bulb_on.png");
+	z-index: 10000;
+}
+*/
