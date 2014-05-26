@@ -281,7 +281,7 @@ function flicker(x)
 		n=2*(h_int+w_int-1);
 
 	}
-	else if(x==3) //effect 3
+	else if(x==3) //effect 3 n value has got distrupted correct it
 	{
 		var h,h_int,w,w_int,n,x;
 		h = $(window).height();
@@ -311,10 +311,13 @@ function flicker(x)
 
 function put_side_bulbs()
 {
-	var h,h_int,w,w_int;
+	var h,h_int,w,w_int,bt;
 	h = $(window).height();
+	bt=(95*h)/768; //Calculation of elevation from the bottom
+	h=h-((87*h)/768);
 	h=h/36; //height divided by 36 (which is the height of bulb container) to give how many bulbs to be placed
 	h_int=Math.floor(h); //floor of height to get the extra margin to be left
+	h=h-36;
 	w = $(window).width();
 	w=w/42;
 	w_int=Math.floor(w);
@@ -325,14 +328,14 @@ function put_side_bulbs()
 		$("#bulb"+i).css("top",(h-h_int)+i*36); //h-h_int denotes the height to be left at the top, i*36 denotes the futher increment in height
 		$("#bulb_back"+i).css("top",(h-h_int)+i*36);
 	}
-	for(j=1; j<w_int; j++) //bottom edge
+	for(j=0; j<w_int; j++) //bottom edge
 	{
 		$(".container").append("<img class='bulb_container' id=bulb"+i+"></img>");
 		$(".container").append("<img class='bulb_back' id=bulb_back"+i+"></img>");
-		$("#bulb"+i).css("bottom",5);
-		$("#bulb_back"+i).css("bottom",5);
-		$("#bulb"+i).css("left",(w-w_int)+j*42);
-		$("#bulb_back"+i).css("left",(w-w_int)+j*42);
+		$("#bulb"+i).css("bottom",bt);
+		$("#bulb_back"+i).css("bottom",bt);
+		$("#bulb"+i).css("left",(w-w_int)+j*42+10);
+		$("#bulb_back"+i).css("left",(w-w_int)+j*42+10);
 		i++;
 	}
 
@@ -355,6 +358,12 @@ function put_side_bulbs()
 		i++;		
 	}
 
+	/*---------------------------------Light-Backgrounds--------------------*/
+		$(".side_back").append("<div class='container_left_back'></div>");
+		$(".side_back").append("<div class='container_right_back'></div>");
+		$(".side_back").append("<div class='container_top_back'></div>");
+		$(".side_back").append("<div class='container_bottom_back'></div>");
+		$(".container_bottom_back").css("bottom",bt);
 }
 
 /*--------------------------------------Document.ready function----------------------------*/
@@ -369,6 +378,7 @@ $(document).ready(function(){
 
 	$(window).resize(function(){
 		$(".container").empty();
+		$(".side_back").empty();
 		put_side_bulbs();
 		flicker(3);
 	});
