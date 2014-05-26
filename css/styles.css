@@ -692,7 +692,6 @@ div.flip-container
 	width: 100%;
 	position: fixed;
 	margin: 0;
-<<<<<<< HEAD
 	z-index: 3500;
 	background: transparent;
 }
@@ -726,9 +725,7 @@ div.flip-container
 	z-index: 2000;
 	background: rgb(215,154,57);
 	box-shadow:  0px 2px 10px 1px #000;
-=======
 	z-index: 3;
->>>>>>> ae880810b6a4722e6b6dd68390c9299ddd846b8a
 }
 
 .bulb_container
