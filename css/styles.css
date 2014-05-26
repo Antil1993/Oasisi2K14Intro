@@ -1,32 +1,84 @@
-	body
+body
 {	padding:0px;
 	margin:0px;
+	background-image:url("./../images/main-background.jpg");
+	background-repeat:no-repeat;
 }
 
-.cover {	
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            width: 100%;
-            height: 100%;
-            background-color: #fff;
-            z-index:4001;
-            filter: alpha(opacity=80);
-        }
- .loading {
-        	position: relative;
-        	margin: auto;
-        	margin-top:calc(20%);
-        	margin-left: 48%;
-        	width:50px;
-        	z-index:5000;
-        }
+@font-face
+{
+font-family:Alegreya-Sans-SC;
+src: url(AlegreyaSC-Black.ttf);
+}
+
+@font-face 
+{	font-family:Carnevalee-Freakshow;
+	src:url("Carnevalee_Freakshow.woff");
+}
+
+@font-face
+{
+font-family:OrthodoxHerbertarian;
+src: url(OrthodoxHerbertarian.ttf);
+}
+
+@font-face
+{
+font-family:Oswald-Light;
+src: url(Oswald-Light.ttf);
+}
+
+/*--------------------------SCROLL BAR STYLING-------------------------------------------------*/
+
+.ctdiv::-webkit-scrollbar-track	
+{	background-color: transparent;
+}
+
+.ctdiv::-webkit-scrollbar
+{	width: 3px;
+	background-color: transparent;
+	margin-right:10px;
+}
+
+.ctdiv::-webkit-scrollbar-thumb
+{	background-color: rgb(50,50,50);
+	border-radius:3px;
+}
+.ctdiv
+{	scrollbar-base-color:rgba(50,50,50,0);
+	scrollbar-width:3px;
+}
+
+
+
+/*-------------------------COVER LOADING PAGE STYLING---------------------------------------------*/
+
+.cover 
+{	position:absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index:5000;
+    filter: alpha(opacity=80);
+}
+ .loading 
+ {	position: relative;
+    margin: auto;
+    margin-top:calc(20%);
+    margin-left: 48%;
+    width:50px;
+    z-index:5000;
+}
+
+/*-------------------------MAIN CONTAINER STYLING---------------------------------------------*/
 
 
 div#main-container
 {	width:100%;
 	height:100%;
-	background-image:url(./../images/main-background.jpg);
+	background-image:url("./../images/main-background.jpg");
 	background-size:cover;
 	z-index:1;
 }
@@ -44,8 +96,145 @@ div#back-roads
 {	width:100%;
 	height:100%;
 	position:absolute;
-	z-index:3;
+	z-index:200;
 }
+
+#lights-bottom
+{	z-index:2001 !important;
+}
+
+/*------------------------------------------SPOTLIGHT ANIMATION-----------------------------------*/
+.spotlights
+{	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:2000;
+	background-color:transparent;
+	overflow:hidden;
+	left:-8px;
+}
+
+.spotlight
+{	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+#spotlight1
+{	transform-origin:36% 86%;
+	-webkit-transform-origin: 36% 86%;
+	animation:rotation1 9s ease 0s infinite normal ;
+	-webkit-animation:rotation1 9s ease 0s infinite normal;
+}
+
+@keyframes rotation1
+{	0%{	transform:rotate(5deg);}
+	50%	{	transform:rotate(15deg);}
+	100% {	transform:rotate(5deg);}
+}
+
+@-webkit-keyframes rotation1
+{	0%{	-webkit-transform:rotate(5deg);}
+	50%	{	-webkit-transform:rotate(15deg);}
+	100% {	-webkit-transform:rotate(5deg);}
+}
+
+#spotlight6
+{	transform-origin:65% 85.5%;
+	-webkit-transform-origin: 65% 85.5%;
+	animation:rotation6 9s ease 0s infinite normal ;
+	-webkit-animation:rotation6 9s ease 0s infinite normal;
+}
+
+@keyframes rotation6
+{	0%{	transform:rotate(-5deg);}
+	50%	{	transform:rotate(-15deg);}
+	100% {	transform:rotate(-5deg);}
+}
+
+@-webkit-keyframes rotation6
+{	0%{	-webkit-transform:rotate(-5deg);}
+	50%	{	-webkit-transform:rotate(-15deg);}
+	100% {	-webkit-transform:rotate(-5deg);}
+}
+
+#spotlight2
+{	transform-origin:40.34% 81.25%;
+	-webkit-transform-origin: 40.34% 81.25%;
+	animation:rotation2 9s ease 0s infinite normal ;
+	-webkit-animation:rotation2 9s ease 0s infinite normal;
+}
+
+@keyframes rotation2
+{	0% {	transform:rotate(+10deg);}
+	50% {	transform:rotate(0deg);}
+	100% {	transform:rotate(+10deg);}
+}
+
+@-webkit-keyframes rotation2
+{	0% {	-webkit-transform:rotate(+10deg);}
+	50% {	-webkit-transform:rotate(0deg);}
+	100% {	-webkit-transform:rotate(+10deg);}
+}
+
+#spotlight5
+{	transform-origin:60.18% 81.25%;
+	-webkit-transform-origin: 60.18% 81.25%;
+	animation:rotation5 9s ease 0s infinite normal ;
+	-webkit-animation:rotation5 9s ease 0s infinite normal;
+}
+
+@keyframes rotation5
+{	0% {	transform:rotate(-10deg);}
+	50% {	transform:rotate(0deg);}
+	100% {	transform:rotate(-10deg);}
+}
+
+@-webkit-keyframes rotation5
+{	0% {	-webkit-transform:rotate(-10deg);}
+	50% {	-webkit-transform:rotate(0deg);}
+	100% {	-webkit-transform:rotate(-10deg);}
+}
+
+#spotlight3
+{	transform-origin:46.41% 80%;
+	-webkit-transform-origin: 46.41% 80%;
+	animation:rotation3 9s ease 0s infinite normal ;
+	-webkit-animation:rotation3 9s ease 0s infinite normal;
+}
+
+@keyframes rotation3
+{	0% {	transform:rotate(-5deg);}
+	50% {	transform:rotate(5deg);}
+	100% {	transform:rotate(-5deg);}
+}
+
+@-webkit-keyframes rotation3
+{	0% {	-webkit-transform:rotate(-5deg);}
+	50% {	-webkit-transform:rotate(+5deg);}
+	100% {	-webkit-transform:rotate(-5deg);}
+}
+
+#spotlight4
+{	transform-origin:54.2% 80%;
+	-webkit-transform-origin: 54.2% 80%;
+	animation:rotation4 9s ease 0s infinite normal ;
+	-webkit-animation:rotation4 9s ease 0s infinite normal;
+}
+
+@keyframes rotation4
+{	0% {	transform:rotate(+5deg);}
+	50% {	transform:rotate(-5deg);}
+	100% {	transform:rotate(+5deg);}
+}
+
+@-webkit-keyframes rotation4
+{	0% {	-webkit-transform:rotate(+5deg);}
+	50% {	-webkit-transform:rotate(-5deg);}
+	100% {	-webkit-transform:rotate(+5deg);}
+}
+
+/*------------------------------------------BOTH LOGOs, BUTTONs, SOCIAL MEDIA AND BOTTOM STRIPs----------------------------------*/
 
 #bppc
 {	position:absolute;
@@ -63,6 +252,10 @@ div#back-roads
 	right:2%;
 }
 
+#oasis14 img
+{	width:100%;
+}
+
 .strip
 {	width:100%;
 	height:100%;
@@ -72,27 +265,35 @@ div#back-roads
 }
 
 #ribbon
-{	z-index:6;
+{	z-index:3000;
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:-1px;
 }
 
-#button-left
-{	z-index:7;
+#button-all
+{	display:none;
+}
+
+.button-list
+{	z-index:4000;
 	position:absolute;
-	width:40%;
+	width:30%;
 	padding:0px;
 	margin:0px;
 	top:90%;
+	list-style-type:none;
 }
 
 #button-right
-{	z-index:7;
-	position:absolute;
-	width:40%;
-	float:right;
-	padding:0px;
-	margin:0px;
-	top:90%;
-	right:0;
+{	float:right;
+	right:80px;
+}
+
+#button-left
+{	float:left;
+	left:5%;
 }
 
 #button-left li
@@ -105,36 +306,62 @@ div#back-roads
 	width:50%;
 }
 
-#button-left li button
-{	width:50%;
-	margin-left:25%;
-	padding:10px;
-	background-image: url('./../images/buttonBackground.jpg');
-	background-size: cover;
-	border: 0px;
-	border-radius: 5px;
-	box-shadow: 0px 0px 10px 3px black; 
-	color: white;
-	font-family: 'Alegreya Sans SC';
-	font-weight: 900;
-	font-size: 20px;
-}
-
-#button-right li button
-{	width:50%;
-	margin-left:25%;
+.button-list li button
+{	width:70%;
+	min-width:115px;
 	padding:5%;
 	background-image: url('./../images/buttonBackground.jpg');
 	background-size: cover;
 	border: 0px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px 3px black; 
-	color:white;
-	font-family: 'Alegreya Sans SC';
+	color:rgb(190,190,190);
+	text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+	font-family:Alegreya-Sans-SC;
 	font-weight: 900;
 	font-size: 20px;
+	cursor:pointer;
+	transition:0.2s;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	-o-transition:0.2s;
+	outline:none;
 }
 
+#button-left li button
+{	margin-left:20%;
+}
+
+#button-right li button
+{	margin-left:0%;	
+}
+
+#button-right li button:hover,#button-left li button:hover,#button-all li button:hover
+{	color:rgba(255,255,255,2);
+	box-shadow: 0px 0px 10px 4px black; 
+}
+
+#social-media
+{	background-color:rgba(0,0,0,0.6);
+	z-index:5000;
+	position:absolute;
+	top:90%;
+	right:0;
+	width:100px;
+	border-radius:10px;
+}
+
+.social-logo
+{	float:right;
+	width:40px;
+	padding:5px;
+	padding-right:5px;
+	opacity:0.6;
+}
+
+.social-logo:hover
+{	opacity:1;
+}
 
 #frame
 {	position:absolute;
@@ -144,52 +371,11 @@ div#back-roads
 	margin-left:3%;
 }
 
-/*=====================================================FLIPPERS===================================================================*/
+/*----------------------------------------------FLIPPERs------------------------------------------------*/
 div.flip-container
 {	position:absolute;
-	z-index:1000;
-}
-
-#flipper-1 .front
-{	background-image:url(./../images/flip01.jpg);	
-}
-#flipper-1 .back
-{	background-image:url(./../images/flip02.jpg);	
-}
-
-#flipper-2 .front
-{	background-image:url(./../images/flip03.jpg);	
-}
-#flipper-2 .back
-{	background-image:url(./../images/flip04.jpg);	
-}
-
-#flipper-3 .front
-{	background-image:url(./../images/flip05.jpg);	
-}
-#flipper-3 .back
-{	background-image:url(./../images/flip06.jpg);	
-}
-
-#flipper-4 .front
-{	background-image:url(./../images/flip07.jpg);	
-}
-#flipper-4 .back
-{	background-image:url(./../images/flip08.jpg);	
-}
-
-#flipper-5 .front
-{	background-image:url(./../images/flip09.jpg);	
-}
-#flipper-5 .back
-{	background-image:url(./../images/flip10.jpg);	
-}
-
-#flipper-6 .front
-{	background-image:url(./../images/flip11.jpg);	
-}
-#flipper-6 .back
-{	background-image:url(./../images/flip12.jpg);	
+	z-index:4000;
+	cursor:pointer;
 }
 
 .front, .back ,.flipper
@@ -202,6 +388,7 @@ div.flip-container
 .flipper .front
 {	background-color:transparent;
 	background-size:cover;
+	display:none;
 }
 
 .flipper .back
@@ -264,30 +451,47 @@ div.flip-container
 }
 
 .front 
-{	-webkit-transform: rotateY(0deg);
-	-ms-transform: rotateY(0deg);
+{/* 	-webkit-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg); */
 	background: transparent;
 	z-index: 2;
 }
-/* ====================================Flipper Ends============================================================ */
-.title, .timer
+
+/*-------------------------------------------BOTTOM TEXT---------------------------------------------*/
+.bottom-text
 {	position:absolute;
-	top:90%;
 	width:30%;
 	color:white;
-	z-index:1800;
-	font-size:20px;
+	z-index:3001;
 	margin-left:35%;
 	text-align:center;
+	font-weight: 900;
 }
-.timer {
-	top: 80%;
-}
-/* =================================== LIGHTBOX ========================================= */
 
-.black {
-	position: absolute;
-	z-index:3000;
+.timer 
+{	top:75%;
+	font-size:35px;
+	font-family:Carnevalee-Freakshow;	
+	letter-spacing: 1px;
+}
+
+.timer2
+{	display:none;
+}
+
+.title
+{	top:88%;
+	font-size: 23px;
+	font-family:OrthodoxHerbertarian;
+	letter-spacing: 2px;
+	margin-bottom:0;
+}
+
+/*---------------------------------------LIGHTBOX--------------------------------------------*/
+
+.black 
+{	position: absolute;
+	z-index:5000;
 	top: 0px;
 	left: 0px;
 	width:100%;
@@ -296,50 +500,186 @@ div.flip-container
 	display: none;
 }
 
-.lightbox {
-	margin-top: 5%;
+.lightbox 
+{	margin-top: 5%;
 	margin-left: 12%;
 	width:76%;
-	min-width: 800px;
+	min-width: 200px;
 	height:76%;
-	background-color: black;
+	background-color: rgba(0,0,0,0.8);
 	border-radius: 15px;
 	box-shadow: 0px 0px 30px 3px black;
 }
-.lightbox_head{
-	background-color: transparent;
+
+.lightbox_head
+{	background-color: transparent;
 	width: 100%;
 	height: 20%;
 	border-bottom: 4px solid white;
 }
-.lightbox_cross{
-	background-color: transparent;
+
+.lightbox_cross
+{	background-color: transparent;
 	float: right;
 	color:white;
 	padding: 5px;
-	width: 50px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	font-family: sans-serif;
-	font-size: 12px;
+	font-size: 20px;
+	cursor:pointer;
 }
-.lightbox_title{
-	background-color: transparent;
+
+.lightbox_title
+{	background-color: transparent;
 	color:white;
+	font-family:OrthodoxHerbertarian;
 	float: left;
 	padding: 5px;
 	width: 70%;
 	margin-left: 15%;
+	margin-top:1%;
 	height: 80%;
-	font-family: sans-serif;
-	font-size: 12px;
+	text-align:center;
+	font-size: 40px;
 }
 
-.lightbox_content{
-	background-color: transparent;
+.lightbox_content
+{	background-color: transparent;
 	width: 100%;
 	height: 75%;
 	border-bottom: 4px solid white;
 }
-.ctdiv {
-	color:white;
+.ctdiv
+{	color:white;
+	font-family:Oswald-Light;
+	letter-spacing:1px;
+	height:100%;
+	overflow-y: scroll;
+	font-size:20px;
+}
+
+#ct1 p
+{	text-align:center;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:5px;
+	padding-bottom:10px;
+}
+
+#ct2 div
+{	width:90%;
+	margin-left:5%;
+	height:100%;
+}
+
+#ct2 ul
+{	list-style-type:none;
+	width:100%;
+	padding:0;
+	height:100%;
+	margin:auto;
+}
+
+#ct2 ul li
+{	float:left;
+	width:300px;
+}
+
+#ct2 p
+{	padding-left:20px;
+	padding-top:5px;
+}
+
+/*---------------------------------MEDIA QUERIES-------------------------------------*/
+
+@media screen and (max-width: 1080px) {
+	#title,#button-right li button,#button-left li button
+	{	font-size:19px;
+	}
+	
+	#timer
+	{	font-size:28px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	
+	#back-roads,#bppc,#ribbon,#lights-bottom,#frame,#button-left,#button-right,.flip-container,#title,#timer,.strip,.lights,.spotlights
+	{	display:none;
+	}
+	
+	#main-container
+	{	background-image:none;
+	}
+	
+	#oasis14
+	{	position:relative;
+		right:0;
+		left:0;
+		top:0;
+		width:70%;
+		margin:0 auto;
+	}
+	
+	#button-all
+	{	display:block;
+		width:70%;
+		margin:0 auto;
+		z-index:7;
+	}
+	
+	#button-all ul
+	{	list-style-type:none;
+	}
+	
+	#button-all li div
+	{	width:50%;
+		min-width:118px;
+		margin:0 auto;
+	}
+	#button-all li button{	
+	width:100%;
+	padding:5%;
+	background-image: url('./../images/buttonBackground.jpg');
+	background-size: cover;
+	border: 0px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 3px black; 
+	color:rgb(190,190,190);
+	text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+	font-family:Alegreya-Sans-SC;
+	font-weight: 900;
+	font-size: 20px;
+	cursor:pointer;
+	margin-top:5%;
+	}
+	
+	.timer2
+	{	display:block;
+		margin:auto;
+		width:100%;
+		color:rgb(50,50,50);
+		font-size:35px;
+		text-align:center;
+		font-family:Carnevalee-Freakshow;
+		font-weight: 900;	
+		font-size: 25px;
+	}
+	
+	#social-media
+	{	position:relative;
+		margin:0 auto;
+		top:0;
+		height:50px;
+	}
+	
+}
+
+@media screen and (max-width: 550px) {
+	.lightbox_title
+	{	font-size:20px;
+	}
+
 }

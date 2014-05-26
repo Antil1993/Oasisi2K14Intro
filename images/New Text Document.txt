@@ -1,4 +1,0 @@
-frame height 444
-frame width 1366
-flipper width 131
-flipper height 185

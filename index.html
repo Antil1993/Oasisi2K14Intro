@@ -1,8 +1,8 @@
 <html>
-
 <head>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> --> 
+	<!--ABOVE LINE WAS HINDERING IE TO LOAD MAIN CONTAINER BACKGROUND  -->
     <title>THAT 90's SHOW | OASIS 2014 | BITS Pilani</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
@@ -30,71 +30,130 @@
 	<meta property="og:image" content="http://www.bits-bosm.org/testIntro/archives.png">
 	<meta property="og:type" content="website">
 
-<script type="text/javascript" src="./js/jquery-2.1.0.min.js"></script>
-<script type="text/javascript" src="./js/jquery.easing.js"></script>
-<script type="text/javascript" src="./js/script.js"></script>
-<script src="js/imagesLoaded.js" type="text/javascript"></script>	
+	<script type="text/javascript" src="./js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.easing.js"></script>
+	<script type="text/javascript" src="js/jquery.arctext.js"></script>	
+	<script type="text/javascript" src="./js/script.js"></script>
+	<script type="text/javascript" src="js/imagesLoaded.js"></script>	
 
-<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 
 </head>
 
 <body>
+	
 	<!--  LOADING PAGE  -->
 	<div id="cover" class="cover">
         <img src="images/loading2.gif" id="loading" class="loading"></div>
     </div>
+	
+	<div style="display:none">
+		<img src="./images/flip1.png">
+		<img src="./images/flip2.png">
+		<img src="./images/flip3.png">
+		<img src="./images/flip4.png">
+		<img src="./images/flip5.png">
+		<img src="./images/flip6.png">
+		<img src="./images/flip7.png">
+		<img src="./images/flip8.png">
+		<img src="./images/flip9.png">
+		<img src="./images/flip10.png">
+		<img src="./images/flip11.png">
+		<img src="./images/flip12.png">
+		<img src="./images/flip13.png">
+		<img src="./images/flip14.png">
+		<img src="./images/flip15.png">
+		<img src="./images/flip16.png">
+		<img src="./images/flip17.png">
+		<img src="./images/flip18.png">
+		<img src="./images/flip19.png">
+		<img src="./images/flip20.png">
+		<img src="./images/flip21.png">
+		<img src="./images/flip22.png">
+	</div>
 
     <!--  LIGHTBOX  -->
 	<div id="black" class="black">
 		<div id="lightbox" class="lightbox">
 			<div id="lightbox_head" class="lightbox_head">
 				<div id="lightbox_title" class="lightbox_title"></div>
-				<div id="lightbox_cross" class="lightbox_cross">CLOSE</div>
+				<div id="lightbox_cross" class="lightbox_cross">X</div>
 			</div>
 			<div id="lightbox_content" class="lightbox_content">
-				<div id="ct1" class="ctdiv">ABOUT US</div>
-				<div id="ct2" class="ctdiv">CONTACTS</div>
+				<div id="ct1" class="ctdiv"><p>How many times have you been told not to long for the past?<br>How often have you been reminded to not dwell upon the times that have passed?<br>Forget it.<br>Move on.<br>It's not coming back.<br><br>That's what you hear, isn't it?<br><br>This year, let's prove them wrong. Let's go back to the 90s.<br>Let nothing hold you back as you abandon all your worries and revel in the glory of times long gone. Relive all the colorful childhood memories of songs, shows, movies, cartoons, comics and games as they fight for your attention.<br>Gear up for 96 hours of reliving history.<br><br>Oasis 2014<br>That 90's Show</p></div>
+				<div id="ct2" class="ctdiv">
+					<div id="contact-list">
+						<ul>
+						<li><p>Ashfaque Ahmad Bari<br>Art, Design and Publicity<br>adp[at]bits-oasis[dot]org<br>Ph : 8290294317</p></li>
+						<li><p>Revant Gupta<br>Controls<br>controls[at]bits-oasis[dot]org<br>Ph : 7891953382</p></li>
+						<li><p>Shashvat Tripathi<br>Publications and Correspondence<br>pcr[at]bits-oasis[dot]org<br>Ph : 9680900342</p></li>
+						<li><p>Vinayak Krishnamurthy<br>Reception and Accomodation<br>recnacc[at]bits-oasis[dot]org<br>Ph : 9772050670</p></li>
+						<li><p>Aishik Dhar<br>Sponsorship and Marketing<br>sponsorship[at]bits-oasis[dot]org<br>Ph : 8058416504</p></li>
+						<li><p>Himanish Ganjoo<br>Stage Controlz<br>stagecontrols[at]bits-oasis<br>Ph : 9680901028</p></li>
+						</ul>
+					</div>
+				</div>
 				<div id="ct3" class="ctdiv">SPONSORS</div>
 			</div>	
 		</div>
 	</div>
 
-
-
+	<!-- MAIN PAGE CONTAINER -->
 	<div id="main-container">
 		<div id="back-roads">
 		</div>
 		
 			<img class="lights" id="lights-top" src="./images/lights-top.png">
 			<img class="lights" id="lights-right" src="./images/lights-right.png">
-			<img class="lights" id="lights-left" src="./images/lights-left.png">
-			<img class="lights" id="lights-bottom" src="./images/lights-bottom.png">;
+			<img class="lights" id="lights-left" src="./images/lights-left.png"> 
+			<img class="lights" id="lights-bottom" src="./images/lights-bottom.png">
 			
-			<img id="bppc" src="./images/bppc.png">
-			<img id="oasis14" src="./images/oasis14.png">
+			<img id="bppc" src="./images/logo-bppc.png">
+			<div id="oasis14"><img src="./images/logo-oasis14.png"></div>
 			
-			<img class="strip" id="ribbon" src="./images/ribbon.png">
+			<img class="ribbon" id="ribbon" src="./images/ribbon.png">
 			<img class="strip" id="strip-1" src="./images/strip-1.png">
 			<img class="strip" id="strip-2" src="./images/strip-2.png">
 			<img class="strip" id="strip-3" src="./images/strip-3.png">
 			<img class="strip" id="strip-4" src="./images/strip-4.png">
 			<img class="strip" id="strip-container" src="./images/strip-container.png">
 			
+			<div class="spotlights" id="spotlights">
+				<img src="./images/spotlight1.png" id="spotlight1" class="spotlight">
+				<img src="./images/spotlight2.png" id="spotlight2" class="spotlight">
+				<img src="./images/spotlight3.png" id="spotlight3" class="spotlight">
+				<img src="./images/spotlight4.png" id="spotlight4" class="spotlight">
+				<img src="./images/spotlight5.png" id="spotlight5" class="spotlight">
+				<img src="./images/spotlight6.png" id="spotlight6" class="spotlight"> 
+			</div>
+			
 			<img id="frame" src="./images/boardpng.png">
 			
-		<ul id="button-left">
+		<ul id="button-left" class="button-list">
 			<li><button id="bt1" class="bt">ABOUT US</button></li>
 			<li><button id="bt2" class="bt">CONTACTS</button></li>
 		</ul>
 		
-		<ul id="button-right">
+		<ul id="button-right" class="button-list">
 			<li><button id="bt3" class="bt">SPONSORS</button></li>
 			<li><button id="bt4" class="bt">OASIS'13</button></li>
 		</ul>
-
-			<div class="flip-container" id="flipper-1">
+		
+		<div id="button-all">
+		<ul>
+			<li><div><button id="bt1" class="bt">ABOUT US</button></div></li>
+			<li><div><button id="bt2" class="bt">CONTACTS</button></div></li>
+			<li><div><button id="bt4" class="bt">OASIS'13</button></div></li>
+			<li><div><button id="bt3" class="bt">SPONSORS</button></div></li>
+		</ul>
+		</div>
+		
+		<div id="social-media">
+			<a href="https://www.facebook.com/oasis.bitspilani"><img id="facebook" class="social-logo" src="./images/logo-facebook.png"></img></a>
+			<a href="https://www.youtube.com/channel/UCVNdvREqZmsi473SqqP6sRg"><img id="youtube" class="social-logo" src="./images/logo-youtube.png"></img></a>
+		</div>
+		
+		<div class="flip-container" id="flipper-1" onclick="flip(1)">
 				<div class="flipper">
 					<div class="front">
 					</div>
@@ -103,7 +162,7 @@
 				</div>
 			</div>
 			
-			<div class="flip-container" id="flipper-2">
+			<div class="flip-container" id="flipper-2" onclick="flip(2)">
 				<div class="flipper">
 					<div class="front">
 					</div>
@@ -112,7 +171,7 @@
 				</div>
 			</div>
 			
-			<div class="flip-container" id="flipper-3">
+			<div class="flip-container" id="flipper-3" onclick="flip(3)">
 				<div class="flipper">
 					<div class="front">
 					</div>
@@ -121,7 +180,7 @@
 				</div>			
 			</div>
 			
-			<div class="flip-container" id="flipper-4">
+			<div class="flip-container" id="flipper-4" onclick="flip(4)">
 				<div class="flipper">
 					<div class="front">
 					</div>
@@ -130,7 +189,7 @@
 				</div>
 			</div>
 			
-			<div class="flip-container" id="flipper-5">
+			<div class="flip-container" id="flipper-5" onclick="flip(5)">
 				<div class="flipper">
 					<div class="front">
 					</div>
@@ -139,7 +198,7 @@
 				</div>
 			</div>
 			
-			<div class="flip-container" id="flipper-6">
+			<div class="flip-container" id="flipper-6" onclick="flip(6)">
 				<div class="flipper">
 					<div class="front">
 					</div>
@@ -148,8 +207,9 @@
 				</div>
 			</div>
 
-			<p id="title" class="title">THAT 90's SHOW</p>
-			<p id="timer" class="timer"></p>
+			<p id="title" class="title bottom-text">THAT 90's SHOW</p>
+			<p id="timer" class="timer bottom-text">DAYS LEFT : <span class="days" id="days1"></span></p>
+			<p id="timer2" class="timer2">DAYS LEFT : <span class="days" id="days2"></span></p>
 			
 	</div>
 	
@@ -164,8 +224,7 @@
 
 		$('.bt').click(function() {
 			var item = $(this).attr('id');
-			item = item.substring(2,3);
-			//console.log(item);
+			item = item.substring(2);
 			if (item == '4') {
 				window.location.assign("http://www.bits-oasis.org")
 			}else {
@@ -179,9 +238,8 @@
 		$('.lightbox_cross').click(function() {
 			$('.black').fadeOut();
 		});
-		$('.black').click(function() {
-			$('.black').fadeOut();
-		});
+		
+
 	</script>
 </body>
 </html>
