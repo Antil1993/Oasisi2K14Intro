@@ -564,7 +564,7 @@ div.flip-container
 	font-size:20px;
 }
 
-#ct1 p
+#ct1 p,#ct3 p
 {	text-align:center;
 	padding-left:20px;
 	padding-right:20px;
@@ -597,7 +597,7 @@ div.flip-container
 }
 
 .sp_template {
-	margin-left: 15%;
+	margin-left: 13%;
 	width:70%;
 }
 
