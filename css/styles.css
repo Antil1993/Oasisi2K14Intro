@@ -35,18 +35,18 @@ src: url(Oswald-Light.ttf);
 }
 
 .ctdiv::-webkit-scrollbar
-{	width: 3px;
+{	width: 10px;
 	background-color: transparent;
 	margin-right:10px;
 }
 
 .ctdiv::-webkit-scrollbar-thumb
 {	background-color: rgb(50,50,50);
-	border-radius:3px;
+	border-radius:5px;
 }
 .ctdiv
 {	scrollbar-base-color:rgba(50,50,50,0);
-	scrollbar-width:3px;
+	scrollbar-width:10px;
 }
 
 
@@ -389,6 +389,8 @@ div.flip-container
 {	background-color:transparent;
 	background-size:cover;
 	display:none;
+	border-radius: 2px;
+	box-shadow: inset 0px 0px 8px 3px black ;
 }
 
 .flipper .back
@@ -400,6 +402,7 @@ div.flip-container
 	-ms-transform: rotateY(-900deg);
 	transform: rotateY(-900deg); */
 	display:none;
+	box-shadow: inset 0px 0px 8px 3px black ;
 }
 
 .flip-container 
@@ -526,7 +529,8 @@ div.flip-container
 	width: 30px;
 	height: 30px;
 	font-family: sans-serif;
-	font-size: 20px;
+	font-weight: bold;
+	font-size: 15px;
 	cursor:pointer;
 }
 
@@ -589,6 +593,11 @@ div.flip-container
 #ct2 p
 {	padding-left:20px;
 	padding-top:5px;
+}
+
+.sp_template {
+	margin-left: 15%;
+	width:70%;
 }
 
 /*---------------------------------MEDIA QUERIES-------------------------------------*/
