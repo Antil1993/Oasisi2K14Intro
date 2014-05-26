@@ -342,8 +342,9 @@ div#back-roads
 }
 
 #social-media
-{	background-color:rgba(0,0,0,0.6);
-	z-index:5000;
+{	
+	background-color:rgba(0,0,0,0.6);
+	z-index:4500;
 	position:absolute;
 	top:90%;
 	right:0;
@@ -678,7 +679,8 @@ div.flip-container
 	}
 	
 	#social-media
-	{	position:relative;
+	{	
+		position:relative;
 		margin:0 auto;
 		top:0;
 		height:50px;
