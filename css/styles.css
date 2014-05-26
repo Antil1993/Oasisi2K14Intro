@@ -264,6 +264,7 @@ div#back-roads
 	left:-1px;
 }
 
+
 #button-all
 {	display:none;
 }
@@ -321,11 +322,11 @@ div#back-roads
 }
 
 #button-left li button
-{	margin-left:20%;
+{	margin-left:15%;
 }
 
 #button-right li button
-{	margin-left:0%;	
+{	margin-left:4%;	
 }
 
 #button-right li button:hover,#button-left li button:hover,#button-all li button:hover
@@ -334,19 +335,31 @@ div#back-roads
 }
 
 #social-media
-{	
-	background-color:rgba(0,0,0,0.6);
+{	background-color:rgba(0,0,0,0.6);
 	z-index:4500;
 	position:absolute;
 	top:90%;
-	right:0;
-	width:100px;
+	right:1%;
 	border-radius:10px;
+	width:7%;
+	min-width:76px;
+}
+#social-media ul
+{	margin:0;
+	padding:0;
+	list-style-type:none;
+	float:left;
+	width:100%;
+}
+	
+#social-media ul li
+{	float:left;
+	width:49%;
 }
 
+
 .social-logo
-{	float:right;
-	width:40px;
+{	width:85%;
 	padding:5px;
 	padding-right:5px;
 	opacity:0.6;
@@ -668,6 +681,7 @@ div.flip-container
 		font-family:Carnevalee-Freakshow;
 		font-weight: 900;	
 		font-size: 25px;
+		padding-bottom:10px;
 	}
 	
 	#social-media
@@ -675,6 +689,7 @@ div.flip-container
 		position:relative;
 		margin:0 auto;
 		top:0;
+		width:100px;
 		height:50px;
 	}
 	
