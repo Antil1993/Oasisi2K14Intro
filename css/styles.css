@@ -719,6 +719,7 @@ div.flip-container
 	width: 42px;
 	margin: 0;
 	content:url("./../images/bulb_on.png");
+	
 }
 .bulb_back
 {
@@ -730,4 +731,3 @@ div.flip-container
 	background: transparent;
 	z-index: -1;
 }
-
