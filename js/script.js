@@ -204,7 +204,7 @@ $(window).resize(function(){			//FUNCTION TO HANDLE RESIZE
 	$("#frame").css("top",frame_top_offset);
 	
 /*--------------------------Flippers---------------------------------*/
-		
+	
 	var frame_top=$('#frame').offset().top;
 	var frame_left=$('#frame').offset().left;
 	var frame_width=$('#frame').width();
@@ -234,7 +234,6 @@ $(window).resize(function(){			//FUNCTION TO HANDLE RESIZE
 	{	var $title = $('#title').hide();
 		var $timer = $('#timer').hide();
 	}
-
 }); 
 
 $(window).blur(function(){
