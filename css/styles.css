@@ -342,11 +342,11 @@ div#back-roads
 }
 
 #button-left li button
-{	margin-left:15%;
+{	margin-left:20%;
 }
 
 #button-right li button
-{	margin-left:4%;	
+{	margin-left:20%;	
 }
 
 #button-right li button:hover,#button-left li button:hover,#button-all li button:hover
@@ -358,11 +358,11 @@ div#back-roads
 {	background-color:rgba(0,0,0,0.6);
 	z-index:100;
 	position:absolute;
-	top:90%;
-	right:1%;
+	top:18%;
+	right:3%;
 	border-radius:10px;
-	width:7%;
-	min-width:76px;
+	width:10%;
+	min-width:100px;
 }
 
 #social-media ul
@@ -375,14 +375,13 @@ div#back-roads
 	
 #social-media ul li
 {	float:left;
-	width:49%;
+	width:33%;
 }
 
 
 .social-logo
 {	width:85%;
 	padding:5px;
-	padding-right:5px;
 	opacity:0.6;
 }
 
