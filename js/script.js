@@ -5,6 +5,7 @@ var curr_image_data = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]];
 /* var autotimer = setInterval(function (){autoflip();},7000); */
 var recently_flipped = 0;
 var flipReset = 0;
+var bc = 0;
 
 
 function fireAnimations(){					//FUNCTION TO ANIMATE AND POSITION TEXT,FRAME,FLIPPERS,BACK-ROADS
@@ -51,6 +52,7 @@ function fireAnimations(){					//FUNCTION TO ANIMATE AND POSITION TEXT,FRAME,FLI
 
 	setTimeout(function() { callAutoFlip(); }, 2000);
 	setTimeout(function() { flipFunction(); }, 3000);
+	setTimeout( function() { setInterval(function() { roadCycle(); }, 1600) },2000);
 
 /*---------------------------SOCIAL MEDIA POSITIONING-------------------------*/
 	if($(document).width() >= 800)
@@ -405,6 +407,26 @@ function put_side_bulbs()
 		$(".side_back").append("<div class='container_top_back'></div>");
 		$(".side_back").append("<div class='container_bottom_back'></div>");
 		$(".container_bottom_back").css("bottom",bt2);
+}
+
+function roadCycle() {
+	if(bc%2 == 0) {
+		$("#main-container").css("background-image","url('images/back-roads.jpg')");
+		setTimeout ( function() { $("#back-roads").css("height","0px"); } , 50 );
+		setTimeout ( function() { $("#back-roads").css("display","none"); } , 50 );
+		setTimeout ( function() { $("#back-roads").css("display","block"); } , 50 );
+		setTimeout ( function() { $("#back-roads").css("background-image","url('images/main-background.jpg')"); } , 50 );
+		setTimeout ( function() { $("#back-roads").animate({'height': '100%'}, {duration : 1200, easing : 'easeInQuint'}); } , 50 );
+		bc++;
+	} else {
+		$("#main-container").css("background-image","url('images/main-background.jpg')");
+		setTimeout ( function() { $("#back-roads").css("height","0px"); } , 50 );
+		setTimeout ( function() { $("#back-roads").css("display","none"); } , 50 );
+		setTimeout ( function() { $("#back-roads").css("display","block"); } , 50 );
+		setTimeout ( function() { $("#back-roads").css("background-image","url('images/back-roads.jpg')"); } , 50 );
+		setTimeout ( function() { $("#back-roads").animate({'height': '100%'}, {duration : 1200, easing : 'easeInQuint'}); } , 50 );
+		bc--;
+	}
 }
 
 /*--------------------------------------Document.ready function----------------------------*/
