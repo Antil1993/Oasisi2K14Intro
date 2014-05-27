@@ -46,6 +46,16 @@ function fireAnimations(){					//FUNCTION TO ANIMATE AND POSITION TEXT,FRAME,FLI
 /*-------------------------BACK ROADS ANIMATIONS-------------------------------*/
 	$("#back-roads").delay(1000).animate({'height': '100%'}, {duration : 1200, easing : 'easeInQuint'});
 	
+/*---------------------------SOCIAL MEDIA POSITIONING-------------------------*/
+	if($(document).width() >= 800)
+	{	$("#social-media").css("top",frame_top+frame_height*50/444);
+	}
+	
+	if($(document).width() < 800)
+	{	$("#social-media").css("top",0);
+	}
+	
+	
 };																												
 
 
@@ -219,9 +229,17 @@ $(window).resize(function(){			//FUNCTION TO HANDLE RESIZE
 	$('#flipper-4').css("left",frame_left+frame_width*699/1366);
 	$('#flipper-5').css("left",frame_left+frame_width*847/1366);
 	$('#flipper-6').css("left",frame_left+frame_width*998/1366);
+/*---------------------------SOCIAL MEDIA POSITIONING-------------------------*/
+	if($(document).width() >= 800)
+	{	$("#social-media").css("top",frame_top+frame_height*50/444);
+	}
+	
+	if($(document).width() < 800)
+	{	$("#social-media").css("top",0);
+	}
 	
 /*-----------------------CURVED TEXT-----------------------------*/
-	 if($(document).width() > 800)
+	 if($(document).width() >= 800)
 	{	$('#title').show();
 		$('#timer').show();
 		var $title = $('#title');
@@ -230,7 +248,7 @@ $(window).resize(function(){			//FUNCTION TO HANDLE RESIZE
 		$timer.arctext({radius: 400});
 	}
 	
-	 if($(document).width() <= 800)
+	 if($(document).width() < 800)
 	{	var $title = $('#title').hide();
 		var $timer = $('#timer').hide();
 	}
