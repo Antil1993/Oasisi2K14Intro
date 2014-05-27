@@ -48,10 +48,10 @@ function fireAnimations(){					//FUNCTION TO ANIMATE AND POSITION TEXT,FRAME,FLI
 /*-------------------------BACK ROADS ANIMATIONS-------------------------------*/
 	$("#back-roads").delay(500).animate({'height': '100%'}, {duration : 1200, easing : 'easeInQuint'});
 	
-<<<<<<< HEAD
+
 	setTimeout(function() { callAutoFlip(); }, 2000);
 	setTimeout(function() { flipFunction(); }, 3000);
-=======
+
 /*---------------------------SOCIAL MEDIA POSITIONING-------------------------*/
 	if($(document).width() >= 800)
 	{	$("#social-media").css("top",frame_top+frame_height*50/444);
@@ -62,7 +62,6 @@ function fireAnimations(){					//FUNCTION TO ANIMATE AND POSITION TEXT,FRAME,FLI
 	}
 	
 	
->>>>>>> 427cce02110000fe6fb869a01b7cb50091f0b121
 };																												
 
 
