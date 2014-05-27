@@ -4,6 +4,8 @@ var angle_data = [[0,-900],[0,-900],[0,-900],[0,-900],[0,-900],[0,-900]];
 var curr_image_data = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]];
 /* var autotimer = setInterval(function (){autoflip();},7000); */
 var recently_flipped = 0;
+var flipReset = 0;
+
 
 function fireAnimations(){					//FUNCTION TO ANIMATE AND POSITION TEXT,FRAME,FLIPPERS,BACK-ROADS
 	
@@ -44,8 +46,10 @@ function fireAnimations(){					//FUNCTION TO ANIMATE AND POSITION TEXT,FRAME,FLI
 	$('#flipper-6').css("left",frame_left+frame_width*998/1366);
 
 /*-------------------------BACK ROADS ANIMATIONS-------------------------------*/
-	$("#back-roads").delay(1000).animate({'height': '100%'}, {duration : 1200, easing : 'easeInQuint'});
+	$("#back-roads").delay(500).animate({'height': '100%'}, {duration : 1200, easing : 'easeInQuint'});
 	
+	setTimeout(function() { callAutoFlip(); }, 2000);
+	setTimeout(function() { flipFunction(); }, 3000);
 };																												
 
 
@@ -179,18 +183,27 @@ function flip(element_id_no)						//FUNCTION TO FLIP THE FLIPPERS
 		curr_image_data[element_id_no-1][0]=random_image;		
 		setTimeout(function(){$(element+' .front').css('background-image','url(./images/flip'+random_image+'.png)')},2000);
 	}
-	
 }
 
-function autoflip(){					//FUNCTION TO AUTO FLIP THE FLIPPERS
-	var random_number = Math.floor((Math.random() * 6) + 1);
+function flipFunction() {
+	setInterval(function() { setTimeout(function() { 
+		var random_number = Math.floor((Math.random() * 6) + 1);
 		while(recently_flipped == random_number)
 		{	random_number = Math.floor((Math.random() * 6) + 1);
 		}
-	flip(random_number);
-	
+		flip(random_number);
+	}, Math.random()*5*1000 ) }, 3000);
 };
 
+function callAutoFlip() {
+	if (flipReset == 6)
+		flipReset = 0;
+	else {
+		flipReset = flipReset + 1;
+		flip(flipReset);
+		setTimeout( 'callAutoFlip()' , 300);
+	}
+}
 
 $(window).resize(function(){			//FUNCTION TO HANDLE RESIZE
 
