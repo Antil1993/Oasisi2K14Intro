@@ -358,7 +358,7 @@ div#back-roads
 {	background-color:rgba(0,0,0,0.6);
 	z-index:100;
 	position:absolute;
-	top:18%;
+	top:18.5%;
 	right:3%;
 	border-radius:10px;
 	width:10%;
@@ -696,11 +696,11 @@ div.flip-container
 	}
 	
 	#social-media
-	{	
+	{	right:0;
 		position:relative;
 		margin:0 auto;
 		top:0;
-		width:100px;
+		width:150px;
 		height:50px;
 	}
 	
