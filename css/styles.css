@@ -771,7 +771,7 @@ div.flip-container
 	height: 36px;
 	width: 42px;
 	margin: 0;
-	content:url("./../images/bulb_on.png");
+	background:url("./../images/bulb_on.png");
 	z-index: 6;
 
 }
@@ -781,7 +781,6 @@ div.flip-container
 	height: 36px;
 	width: 42px;
 	margin: 0;
-	content:url("./../images/bulb_off.png");
-	background: transparent;
+	background:url("./../images/bulb_off.png");
 	z-index: 2;
 } 
