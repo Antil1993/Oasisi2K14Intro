@@ -313,7 +313,8 @@ function put_side_bulbs()
 {
 	var h,h_int,w,w_int,bt;
 	h = $(window).height();
-	bt=(95*h)/768; //Calculation of elevation from the bottom
+	bt=(90*h)/768; //Calculation of elevation from the bottom
+	bt2=(96*h)/768; //Calculation of elevation from the bottom
 	h=h-((87*h)/768);
 	h=h/36; //height divided by 36 (which is the height of bulb container) to give how many bulbs to be placed
 	h_int=Math.floor(h); //floor of height to get the extra margin to be left
@@ -327,6 +328,9 @@ function put_side_bulbs()
 		$(".container").append("<img class='bulb_back' id=bulb_back"+i+"></img>");
 		$("#bulb"+i).css("top",(h-h_int)+i*36); //h-h_int denotes the height to be left at the top, i*36 denotes the futher increment in height
 		$("#bulb_back"+i).css("top",(h-h_int)+i*36);
+		
+		$("#bulb"+i).css("left",-5);
+		$("#bulb_back"+i).css("left",-5);
 	}
 	for(j=0; j<w_int; j++) //bottom edge
 	{
@@ -345,8 +349,8 @@ function put_side_bulbs()
 		$(".container").append("<img class='bulb_back' id=bulb_back"+i+"></img>");
 		$("#bulb"+i).css("top",(h-h_int)+j*36); //h-h_int denotes the height to be left at the top, i*36 denotes the futher increment in height
 		$("#bulb_back"+i).css("top",(h-h_int)+j*36);
-		$("#bulb"+i).css("right",0);
-		$("#bulb_back"+i).css("right",0);
+		$("#bulb"+i).css("right",-5);
+		$("#bulb_back"+i).css("right",-5);
 		i++;
 	}
 	for(j=w_int-1; j>0; j--) //top edge
@@ -355,6 +359,10 @@ function put_side_bulbs()
 		$(".container").append("<img class='bulb_back' id=bulb_back"+i+"></img>");
 		$("#bulb"+i).css("left",(w-w_int)-3+j*42);
 		$("#bulb_back"+i).css("left",(w-w_int)-3+j*42);
+		
+		$("#bulb"+i).css("top",-5);
+		$("#bulb_back"+i).css("top",-5);
+		
 		i++;		
 	}
 
@@ -363,7 +371,7 @@ function put_side_bulbs()
 		$(".side_back").append("<div class='container_right_back'></div>");
 		$(".side_back").append("<div class='container_top_back'></div>");
 		$(".side_back").append("<div class='container_bottom_back'></div>");
-		$(".container_bottom_back").css("bottom",bt);
+		$(".container_bottom_back").css("bottom",bt2);
 }
 
 /*--------------------------------------Document.ready function----------------------------*/

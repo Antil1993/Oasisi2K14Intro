@@ -94,7 +94,7 @@ div#back-roads
 {	width:100%;
 	height:100%;
 	position:absolute;
-	z-index:3;
+	z-index:5;
 	background-color:transparent;
 	overflow:hidden;
 	left:-8px;
@@ -227,7 +227,7 @@ div#back-roads
 	z-index:3;
 	width:20%;
 	top:5%;
-	left:2%;
+	left:3%;
 }
 
 #oasis14
@@ -235,7 +235,7 @@ div#back-roads
 	z-index:3;
 	width:20%;
 	top:5%;
-	right:2%;
+	right:3%;
 }
 
 #oasis14 img
@@ -246,7 +246,7 @@ div#back-roads
 {	width:100%;
 	height:100%;
 	position:absolute;
-	z-index:4;
+	z-index:9;
 	left:-1px;
 }
 
@@ -263,7 +263,7 @@ div#back-roads
 }
 
 .button-list
-{	z-index:6;
+{	z-index:10;
 	position:absolute;
 	width:30%;
 	padding:0px;
@@ -329,7 +329,7 @@ div#back-roads
 
 #social-media
 {	background-color:rgba(0,0,0,0.6);
-	z-index:5;
+	z-index:10;
 	position:absolute;
 	top:90%;
 	right:1%;
@@ -337,6 +337,7 @@ div#back-roads
 	width:7%;
 	min-width:76px;
 }
+
 #social-media ul
 {	margin:0;
 	padding:0;
@@ -365,7 +366,7 @@ div#back-roads
 /*----------------------------------------------FLIPPERs------------------------------------------------*/
 div.flip-container
 {	position:absolute;
-	z-index:5;
+	z-index:11;
 	cursor:pointer;
 }
 
@@ -455,7 +456,7 @@ div.flip-container
 {	position:absolute;
 	width:30%;
 	color:white;
-	z-index:5;
+	z-index:10;
 	margin-left:35%;
 	text-align:center;
 	font-weight: 900;
@@ -484,7 +485,7 @@ div.flip-container
 
 .black 
 {	position: absolute;
-	z-index:7;
+	z-index:12;
 	top: 0px;
 	left: 0px;
 	width:100%;
@@ -605,7 +606,7 @@ div.flip-container
 
 @media screen and (max-width: 800px) {
 	
-	#back-roads,#bppc,#ribbon,#lights-bottom,#frame,#button-left,#button-right,.flip-container,#title,#timer,.strip,.lights,.spotlights
+	#back-roads,#bppc,#ribbon,#lights-bottom,#frame,#button-left,#button-right,.flip-container,#title,#timer,.strip,.lights,.spotlights,.side_back,.container
 	{	display:none;
 	}
 	
@@ -692,48 +693,48 @@ div.flip-container
 	width: 100%;
 	position: fixed;
 	margin: 0;
-	z-index: 3;
+	z-index: 7;
 	background: transparent;
 }
 
 .container_left_back
 {
-	width: 42px;
+	width: 25px;
 	height: 100%;
 	position: absolute;
 	background: url('./../images/side_back.jpg');
-	z-index: 2;
+	z-index: 6;
 	box-shadow:  2px 0px 10px 1px #000
 }
 
 .container_right_back
 {
-	width: 42px;
+	width: 25px;
 	height: 100%;
 	right: 0;
 	position: absolute;
 	background: url('./../images/side_back.jpg');
-	z-index: 2;
+	z-index: 6;
 	box-shadow: -2px 0px 10px 1px #000;
 }
 
 .container_top_back
 {
 	width: 100%;
-	height: 36px;
+	height: 22px;
 	position: absolute;
 	z-index: 2000;
 	background: url('./../images/side_back.jpg');
 	box-shadow:  0px 2px 10px 1px #000;
-	z-index: 2;
+	z-index: 6;
 }
 
 .container_bottom_back
 {
-	height: 42px;
+	height: 22px;
 	width: 100%;
 	position: absolute;
-	z-index: 2;
+	z-index: 6;
 	background: url('./../images/side_back.jpg');
 	box-shadow:  0px -2px 10px 1px #000;
 }
@@ -745,7 +746,7 @@ div.flip-container
 	width: 42px;
 	margin: 0;
 	content:url("./../images/bulb_on.png");
-	z-index: 3;
+	z-index: 6;
 
 }
 .bulb_back
