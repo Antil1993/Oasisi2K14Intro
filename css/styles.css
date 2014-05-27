@@ -355,14 +355,13 @@ div#back-roads
 }
 
 #social-media
-{	background-color:rgba(0,0,0,0.6);
+{	background-color:rgba(255,255,255,0.2);
 	z-index:100;
 	position:absolute;
-	top:18.5%;
-	right:3%;
 	border-radius:10px;
 	width:10%;
-	min-width:100px;
+	min-width:80px;
+	margin-left:45%;
 }
 
 #social-media ul
@@ -702,6 +701,7 @@ div.flip-container
 		top:0;
 		width:150px;
 		height:50px;
+		background-color:rgba(0,0,0,0.6);
 	}
 	
 }
@@ -771,7 +771,7 @@ div.flip-container
 	height: 36px;
 	width: 42px;
 	margin: 0;
-	content:url("./../images/bulb_on.png");
+	background:url("./../images/bulb_on.png");
 	z-index: 6;
 
 }
@@ -781,7 +781,6 @@ div.flip-container
 	height: 36px;
 	width: 42px;
 	margin: 0;
-	content:url("./../images/bulb_off.png");
-	background: transparent;
+	background:url("./../images/bulb_off.png");
 	z-index: 2;
 } 

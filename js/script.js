@@ -48,8 +48,21 @@ function fireAnimations(){					//FUNCTION TO ANIMATE AND POSITION TEXT,FRAME,FLI
 /*-------------------------BACK ROADS ANIMATIONS-------------------------------*/
 	$("#back-roads").delay(500).animate({'height': '100%'}, {duration : 1200, easing : 'easeInQuint'});
 	
+<<<<<<< HEAD
 	setTimeout(function() { callAutoFlip(); }, 2000);
 	setTimeout(function() { flipFunction(); }, 3000);
+=======
+/*---------------------------SOCIAL MEDIA POSITIONING-------------------------*/
+	if($(document).width() >= 800)
+	{	$("#social-media").css("top",frame_top+frame_height*50/444);
+	}
+	
+	if($(document).width() < 800)
+	{	$("#social-media").css("top",0);
+	}
+	
+	
+>>>>>>> 427cce02110000fe6fb869a01b7cb50091f0b121
 };																												
 
 
@@ -232,9 +245,17 @@ $(window).resize(function(){			//FUNCTION TO HANDLE RESIZE
 	$('#flipper-4').css("left",frame_left+frame_width*699/1366);
 	$('#flipper-5').css("left",frame_left+frame_width*847/1366);
 	$('#flipper-6').css("left",frame_left+frame_width*998/1366);
+/*---------------------------SOCIAL MEDIA POSITIONING-------------------------*/
+	if($(document).width() >= 800)
+	{	$("#social-media").css("top",frame_top+frame_height*50/444);
+	}
+	
+	if($(document).width() < 800)
+	{	$("#social-media").css("top",0);
+	}
 	
 /*-----------------------CURVED TEXT-----------------------------*/
-	 if($(document).width() > 800)
+	 if($(document).width() >= 800)
 	{	$('#title').show();
 		$('#timer').show();
 		var $title = $('#title');
@@ -243,7 +264,7 @@ $(window).resize(function(){			//FUNCTION TO HANDLE RESIZE
 		$timer.arctext({radius: 400});
 	}
 	
-	 if($(document).width() <= 800)
+	 if($(document).width() < 800)
 	{	var $title = $('#title').hide();
 		var $timer = $('#timer').hide();
 	}
@@ -337,8 +358,8 @@ function put_side_bulbs()
 	w_int=Math.floor(w);
 	for(i=0; i<h_int; i++) //loop for left edge
 	{
-		$(".container").append("<img class='bulb_container' id=bulb"+i+"></img>");
-		$(".container").append("<img class='bulb_back' id=bulb_back"+i+"></img>");
+		$(".container").append("<div class='bulb_container' id=bulb"+i+"></div>");
+		$(".container").append("<div class='bulb_back' id=bulb_back"+i+"></div>");
 		$("#bulb"+i).css("top",(h-h_int)+i*36); //h-h_int denotes the height to be left at the top, i*36 denotes the futher increment in height
 		$("#bulb_back"+i).css("top",(h-h_int)+i*36);
 		
@@ -347,8 +368,8 @@ function put_side_bulbs()
 	}
 	for(j=0; j<w_int; j++) //bottom edge
 	{
-		$(".container").append("<img class='bulb_container' id=bulb"+i+"></img>");
-		$(".container").append("<img class='bulb_back' id=bulb_back"+i+"></img>");
+		$(".container").append("<div class='bulb_container' id=bulb"+i+"></div>");
+		$(".container").append("<div class='bulb_back' id=bulb_back"+i+"></div>");
 		$("#bulb"+i).css("bottom",bt);
 		$("#bulb_back"+i).css("bottom",bt);
 		$("#bulb"+i).css("left",(w-w_int)+j*42+10);
@@ -358,8 +379,8 @@ function put_side_bulbs()
 
 	for(j=h_int-1; j>=0; j--) //right edge
 	{
-		$(".container").append("<img class='bulb_container' id=bulb"+i+"></img>");
-		$(".container").append("<img class='bulb_back' id=bulb_back"+i+"></img>");
+		$(".container").append("<div class='bulb_container' id=bulb"+i+"></div>");
+		$(".container").append("<div class='bulb_back' id=bulb_back"+i+"></div>");
 		$("#bulb"+i).css("top",(h-h_int)+j*36); //h-h_int denotes the height to be left at the top, i*36 denotes the futher increment in height
 		$("#bulb_back"+i).css("top",(h-h_int)+j*36);
 		$("#bulb"+i).css("right",-5);
@@ -368,8 +389,8 @@ function put_side_bulbs()
 	}
 	for(j=w_int-1; j>0; j--) //top edge
 	{
-		$(".container").append("<img class='bulb_container' id=bulb"+i+"></img>");
-		$(".container").append("<img class='bulb_back' id=bulb_back"+i+"></img>");
+		$(".container").append("<div class='bulb_container' id=bulb"+i+"></div>");
+		$(".container").append("<div class='bulb_back' id=bulb_back"+i+"></div>");
 		$("#bulb"+i).css("left",(w-w_int)-3+j*42);
 		$("#bulb_back"+i).css("left",(w-w_int)-3+j*42);
 		
