@@ -79,7 +79,7 @@
 
 				setTimeout(function() { callAutoFlip(); }, 2000);
 				setTimeout(function() { flipFunction(); }, 3000);
-				setTimeout( function() { setInterval(function() { roadCycle(); }, 1600) },2000);
+				setTimeout( function() { setInterval(function() { roadCycle(); }, 2800) },2300);
 	
 		//SOCIAL MEDIA POSITIONING (SIMILAR TO FLIPPER POSITIONING)
 			if($(document).width() >= 800)
@@ -146,7 +146,7 @@
 			$(".strip").css("min-height",document_width*600/1366);
 			var main_container_height = $(".strip").height();
 			$("#main-container, #spotlights, .spotlight, .container").css("height",main_container_height);
-			$(".title").css("top",main_container_height*0.88);
+			$(".title").css("top",main_container_height*0.85);
 			$(".timer").css("top",main_container_height*0.75);
 			$(".button-list").css("top",main_container_height*0.90);
 			$("#back-roads").css("height",main_container_height);
@@ -453,7 +453,7 @@ function callAutoFlip() {
 //=============================================================BACK ROADS ANIMATION()========================================================//
 function roadCycle() {
 	var offset = $(window).width();
-	if (offset >= 930) {
+	if (offset >= 1200) {
 		rc = 1;
 		if(bc%2 == 0) {
 			$("#main-container").css("background-image","url('images/back-roads.jpg')");
@@ -461,7 +461,7 @@ function roadCycle() {
 			setTimeout ( function() { $("#back-roads").css("display","none"); } , 50 );
 			setTimeout ( function() { $("#back-roads").css("display","block"); } , 50 );
 			setTimeout ( function() { $("#back-roads").css("background-image","url('images/main-background.jpg')"); } , 50 );
-			setTimeout ( function() { $("#back-roads").animate({'height': '100%'}, {duration : 1200, easing : 'easeInQuint'}); } , 50 );
+			setTimeout ( function() { $("#back-roads").animate({'height': '100%'}, {duration : 2000, easing : 'easeInQuint'}); } , 50 );
 			bc++;
 		} else {
 			$("#main-container").css("background-image","url('images/main-background.jpg')");
@@ -469,7 +469,7 @@ function roadCycle() {
 			setTimeout ( function() { $("#back-roads").css("display","none"); } , 50 );
 			setTimeout ( function() { $("#back-roads").css("display","block"); } , 50 );
 			setTimeout ( function() { $("#back-roads").css("background-image","url('images/back-roads.jpg')"); } , 50 );
-			setTimeout ( function() { $("#back-roads").animate({'height': '100%'}, {duration : 1200, easing : 'easeInQuint'}); } , 50 );
+			setTimeout ( function() { $("#back-roads").animate({'height': '100%'}, {duration : 2000, easing : 'easeInQuint'}); } , 50 );
 			bc--;
 		}
 	}
