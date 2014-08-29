@@ -134,116 +134,33 @@ div#back-roads
 #spotlight1
 {	transform-origin:36% 86%;
 	-webkit-transform-origin: 36% 86%;
-	animation:rotation1 9s ease 0s infinite normal ;
-	-webkit-animation:rotation1 9s ease 0s infinite normal;
-}
-
-@keyframes rotation1
-{	0%{	transform:rotate(5deg);}
-	50%	{	transform:rotate(15deg);}
-	100% {	transform:rotate(5deg);}
-}
-
-@-webkit-keyframes rotation1
-{	0%{	-webkit-transform:rotate(5deg);}
-	50%	{	-webkit-transform:rotate(15deg);}
-	100% {	-webkit-transform:rotate(5deg);}
 }
 
 #spotlight6
 {	transform-origin:65% 85.5%;
 	-webkit-transform-origin: 65% 85.5%;
-	animation:rotation6 9s ease 0s infinite normal ;
-	-webkit-animation:rotation6 9s ease 0s infinite normal;
-}
-
-@keyframes rotation6
-{	0%{	transform:rotate(-5deg);}
-	50%	{	transform:rotate(-15deg);}
-	100% {	transform:rotate(-5deg);}
-}
-
-@-webkit-keyframes rotation6
-{	0%{	-webkit-transform:rotate(-5deg);}
-	50%	{	-webkit-transform:rotate(-15deg);}
-	100% {	-webkit-transform:rotate(-5deg);}
 }
 
 #spotlight2
 {	transform-origin:40.34% 81.25%;
 	-webkit-transform-origin: 40.34% 81.25%;
-	animation:rotation2 9s ease 0s infinite normal ;
-	-webkit-animation:rotation2 9s ease 0s infinite normal;
-}
-
-@keyframes rotation2
-{	0% {	transform:rotate(+10deg);}
-	50% {	transform:rotate(0deg);}
-	100% {	transform:rotate(+10deg);}
-}
-
-@-webkit-keyframes rotation2
-{	0% {	-webkit-transform:rotate(+10deg);}
-	50% {	-webkit-transform:rotate(0deg);}
-	100% {	-webkit-transform:rotate(+10deg);}
 }
 
 #spotlight5
 {	transform-origin:60.18% 81.25%;
 	-webkit-transform-origin: 60.18% 81.25%;
-	animation:rotation5 9s ease 0s infinite normal ;
-	-webkit-animation:rotation5 9s ease 0s infinite normal;
-}
-
-@keyframes rotation5
-{	0% {	transform:rotate(-10deg);}
-	50% {	transform:rotate(0deg);}
-	100% {	transform:rotate(-10deg);}
-}
-
-@-webkit-keyframes rotation5
-{	0% {	-webkit-transform:rotate(-10deg);}
-	50% {	-webkit-transform:rotate(0deg);}
-	100% {	-webkit-transform:rotate(-10deg);}
 }
 
 #spotlight3
 {	transform-origin:46.41% 80%;
 	-webkit-transform-origin: 46.41% 80%;
-	animation:rotation3 9s ease 0s infinite normal ;
-	-webkit-animation:rotation3 9s ease 0s infinite normal;
-}
-
-@keyframes rotation3
-{	0% {	transform:rotate(-5deg);}
-	50% {	transform:rotate(5deg);}
-	100% {	transform:rotate(-5deg);}
-}
-
-@-webkit-keyframes rotation3
-{	0% {	-webkit-transform:rotate(-5deg);}
-	50% {	-webkit-transform:rotate(+5deg);}
-	100% {	-webkit-transform:rotate(-5deg);}
 }
 
 #spotlight4
 {	transform-origin:54.2% 80%;
 	-webkit-transform-origin: 54.2% 80%;
-	animation:rotation4 9s ease 0s infinite normal ;
-	-webkit-animation:rotation4 9s ease 0s infinite normal;
 }
 
-@keyframes rotation4
-{	0% {	transform:rotate(+5deg);}
-	50% {	transform:rotate(-5deg);}
-	100% {	transform:rotate(+5deg);}
-}
-
-@-webkit-keyframes rotation4
-{	0% {	-webkit-transform:rotate(+5deg);}
-	50% {	-webkit-transform:rotate(-5deg);}
-	100% {	-webkit-transform:rotate(+5deg);}
-}
 
 /*------------------------------------------BOTH LOGOs, BUTTONs, SOCIAL MEDIA AND BOTTOM STRIPs----------------------------------*/
 

@@ -42,7 +42,7 @@
 			
 		//FRAME POSITIONING
 			var frame_top_offset=document_height*0.1;
-			$("#frame").css("width","93%");
+			$("#frame").css("width",0.93*$(window).width());
 			$("#frame").css("top",frame_top_offset);
 	
 		//FLIPPERS POSITIONING
@@ -93,7 +93,7 @@
 			if(flag==0)
 			{	flag++;
 				put_side_bulbs();
-				flicker(3);
+				//flicker(3);
 			}
 	};	
 
@@ -120,7 +120,7 @@
 		
 		//FRAME POSITIONING
 			var frame_top_offset=document_height*0.1;
-			$("#frame").css("width","93%"); 
+			$("#frame").css("width",0.93*$(window).width()); 
 			$("#frame").css("top",frame_top_offset);
 		
 		//FLIPPERS POSITIONING
